@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Sale Price</th>
+                <th>Sale</th>
+                <th>Brand</th>
+                <th>Rating</th>
+                <th>Feedbacks</th>
+                <th>Review Rating</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.salePriceU }}</td>
+                <td>{{ product.sale }}%</td>
+                <td>{{ product.brand }}</td>
+                <td>{{ product.rating }}</td>
+                <td>{{ product.feedbacks }}</td>
+                <td>{{ product.reviewRating }}</td>
+                <td><a href="{{ product.link }}" target="_blank">Link</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/categories">Back to Categories</a>
+</body>
+</html>
