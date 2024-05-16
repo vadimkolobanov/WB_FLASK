@@ -1,0 +1,67 @@
+/* Стили для таблицы */
+.container {
+    margin-top: 50px;
+}
+
+.table-container {
+    margin: auto;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+}
+/* Верхнее меню */
+.navbar {
+    background-color: #7579e7; /* Фоновый цвет меню */
+    color: #fff; /* Цвет текста */
+    font-family: 'Fira Sans', sans-serif; /* Шрифт */
+}
+
+.navbar-brand {
+    color: #fff; /* Цвет ссылки */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Цвет ссылок */
+    font-weight: bold; /* Жирный шрифт */
+    margin-right: 15px; /* Отступ между ссылками */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f5f5f5; /* Изменение цвета ссылок при наведении */
+}
+/* Верхнее меню */
+/* Изменения в цвете фона */
+
+
+.table-wrapper {
+    background-color: #ffffff; /* светлый цвет фона таблицы */
+}
+
+/* Добавленные стили для отступов последней ячейки */
+td:last-child {
+    padding-right: 20px; /* Увеличиваем отступ справа для последней ячейки */
+}
+
+
+
+.btn-primary {
+    background-color: #7579e7; /* Фиолетовый цвет фона */
+    border-color: #7579e7; /* Фиолетовый цвет границы */
+    color: #fff; /* Белый цвет текста */
+    border-radius: 20px; /* Скругленные углы */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-family: 'Fira Sans', sans-serif; /* Шрифт */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #555; /* Фиолетовый цвет при наведении */
+    border-color: #555; /* Фиолетовый цвет границы при наведении */
+}

@@ -2,10 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wildberries Parser</title>
+    <!-- Подключение стилей -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='main_page.css') }}" rel="stylesheet">
+    <!-- Подключение Bootstrap CSS (если нужно) -->
+
 </head>
 <body>
-    <h1>Welcome to Wildberries Parser</h1>
-    <a href="/categories">View Categories</a>
+<nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Happy Python Development</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://happypython.ru" target="_blank">На сайт</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Домой</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/categories">Категории</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Верхнее меню -->
+    <div class="container">
+        <div class="text-center">
+            <h1 class="mb-4">Welcome to Wildberries Parser</h1>
+            <a href="/categories" class="btn btn-primary btn-lg">View Categories</a>
+        </div>
+    </div>
+    <!-- Подключение Bootstrap JS (если нужно) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

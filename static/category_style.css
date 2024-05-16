@@ -1,0 +1,112 @@
+/* Bootstrap styles */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff; /* Белый фон для модального окна */
+    margin: 10% auto; /* Отступы по бокам */
+    padding: 30px; /* Отступы внутри модального окна */
+    border: 1px solid #7579e7; /* Фиолетовая граница */
+    border-radius: 20px; /* Скругленные углы */
+    max-width: 400px; /* Максимальная ширина */
+    width: 100%;
+}
+
+.close {
+    color: #7579e7; /* Фиолетовый цвет для крестика закрытия */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333; /* Цвет крестика при наведении */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Верхнее меню */
+.navbar {
+    background-color: #7579e7; /* Фоновый цвет меню */
+    color: #fff; /* Цвет текста */
+    font-family: 'Fira Sans', sans-serif; /* Шрифт */
+}
+
+.navbar-brand {
+    color: #fff; /* Цвет ссылки */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Цвет ссылок */
+    font-weight: bold; /* Жирный шрифт */
+    margin-right: 15px; /* Отступ между ссылками */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f5f5f5; /* Изменение цвета ссылок при наведении */
+}
+/* Верхнее меню */
+
+/* Стили для модального окна */
+.modal-content form {
+    text-align: center; /* Центрирование содержимого формы */
+}
+
+.modal-content form label {
+    display: block;
+    margin-bottom: 10px; /* Отступ между метками */
+    color: #7579e7; /* Фиолетовый цвет текста меток */
+    font-family: 'Fira Sans', sans-serif; /* Шрифт для меток */
+}
+
+.modal-content form input[type="number"] {
+    width: 100%;
+    margin-bottom: 15px; /* Отступ между полями ввода */
+    padding: 8px; /* Поля ввода */
+    border-radius: 5px; /* Скругление углов полей ввода */
+}
+
+.modal-content form input[type="submit"] {
+    width: 100%;
+    margin-top: 10px; /* Отступ сверху кнопки */
+    background-color: #7579e7; /* Фиолетовый цвет фона кнопки */
+    color: #fff; /* Белый цвет текста кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 20px; /* Скругление углов кнопки */
+    padding: 10px; /* Отступы кнопки */
+    font-family: 'Fira Sans', sans-serif; /* Шрифт для кнопки */
+}
+
+/* Стили для кнопок-ссылок */
+.btn-primary {
+    background-color: #7579e7; /* Фиолетовый цвет фона */
+    border-color: #7579e7; /* Фиолетовый цвет границы */
+    color: #fff; /* Белый цвет текста */
+    border-radius: 20px; /* Скругленные углы */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-family: 'Fira Sans', sans-serif; /* Шрифт */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #555; /* Фиолетовый цвет при наведении */
+    border-color: #555; /* Фиолетовый цвет границы при наведении */
+}

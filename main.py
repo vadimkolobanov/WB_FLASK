@@ -110,7 +110,7 @@ def products():
 
     if category:
         data_list = []
-        for page in range(1, 3):  # Ограничим для теста до 2 страниц
+        for page in range(1, 2):  # Ограничим для теста до 2 страниц
             data = scrap_page(page, category['shard'], category['query'], low_price, top_price, discount)
             products = get_data_from_json(data)
             if products:
